@@ -14,8 +14,9 @@ public class Music {
         song.title=systemInScanner.nextLine();
         System.out.println("Milyen hosszu (perc)?");
         song.length=systemInScanner.nextInt();
+        systemInScanner.nextLine();
 
-        System.out.println("A dal adatai: "+ song.band+" - "+ song.title +" ( " + song.length +" perc)");
+        System.out.println("A dal adatai: "+ song.band+" - "+ song.title +" (" + song.length +" perc)");
 
     }
 }
