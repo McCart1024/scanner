@@ -8,11 +8,11 @@ public class Music {
         Song song = new Song();
         Scanner systemInScanner=new Scanner(System.in);
 
-        System.out.printf("Ki az eloado?");
+        System.out.println("Ki az eloado?");
         song.band=systemInScanner.nextLine();
         System.out.println("Mi a cime?");
         song.title=systemInScanner.nextLine();
-        System.out.printf("Milyen hosszu (perc)?");
+        System.out.println("Milyen hosszu (perc)?");
         song.length=systemInScanner.nextInt();
 
         System.out.println("A dal adatai: "+ song.band+" - "+ song.title +" ( " + song.length +" perc)");
