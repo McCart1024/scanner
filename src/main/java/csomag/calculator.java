@@ -1,6 +1,5 @@
 package csomag;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class calculator {
@@ -8,13 +7,13 @@ public class calculator {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int answer;
+        double answer;
         boolean bool=false;
 
         System.out.println("1. szam:");
-        int firstNumber = scanner.nextInt();
+        double firstNumber = scanner.nextDouble();
         System.out.println("2. szam:");
-        int secondNumber = scanner.nextInt();
+        double secondNumber = scanner.nextDouble();
 
         do {
 
@@ -34,7 +33,7 @@ public class calculator {
                     bool = true;
                     break;
                 case '/':
-                    answer = firstNumber / secondNumber;
+                    answer = (firstNumber / secondNumber);
                     System.out.println(answer);
                     bool = true;
                     break;
@@ -49,7 +48,7 @@ public class calculator {
             }
 
 
-        } while (bool==false);
+        } while (!bool);
 
     }
 }
