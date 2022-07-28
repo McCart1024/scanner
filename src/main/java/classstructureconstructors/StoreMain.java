@@ -20,6 +20,20 @@ public class StoreMain {
         store.disPatch(10);
         System.out.println(store.getStock());
 
+
+        Store store2=new Store("barack");
+
+        System.out.println(store2.getProduct()+" , "+store2.getStock());
+
+        store2.store(4);
+        System.out.println(store2.getStock());
+        store2.disPatch(2);
+        System.out.println(store2.getStock());
+
+        store2.store(5);
+        System.out.println(store2.getStock());
+        store2.disPatch(2);
+        System.out.println(store2.getStock());
     }
 
 }
