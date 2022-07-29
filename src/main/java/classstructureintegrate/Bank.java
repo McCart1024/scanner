@@ -14,14 +14,20 @@ public class Bank {
         String owner= scanner.nextLine();
         System.out.println("Folyószámla egyenleg:");
         int balance=scanner.nextInt();
+        scanner.nextLine();
 
         BankAccount bankaccount=new BankAccount(accountNumber,owner,balance);
 
-        bankaccount.deposit(500000);
-        System.out.println(bankaccount.getInfo());;
-
-        bankaccount.withdraw(350000);
         System.out.println(bankaccount.getInfo());
+
+        System.out.println("Befizetés összege:");
+        bankaccount.deposit(scanner.nextInt());
+        System.out.println(bankaccount.getInfo());
+
+        System.out.println("Kivét összege:");
+        bankaccount.withdraw(scanner.nextInt());
+
+        System.out.println(bankaccount.getInfo());;
 
     }
 }
