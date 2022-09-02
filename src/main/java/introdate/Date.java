@@ -49,5 +49,8 @@ public class Date {
 
         System.out.println(date.isBefore(date2));
         System.out.println(date2.isAfter(date));
+
+        System.out.println(date.getMonthValue());
+
     }
 }
