@@ -33,4 +33,6 @@ public class Test {
             System.out.println(N + " x " + i + " = " + N * i);
         }
     }
+
+
 }
